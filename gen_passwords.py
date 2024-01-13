@@ -21,10 +21,7 @@ def pass_gen():
     time.sleep(1)
     
     
-#     while True:
     password = int(input('''Введите: 1 - легкий; 2 - средний; 3 - сложный: '''))
-#         if (password == 1 or password == 2 or password == 3) and type(password) == int(password):
-#             break
     time.sleep(1)
     
     print('-------------------------------------------')
