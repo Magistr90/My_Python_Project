@@ -2,9 +2,16 @@
 import time
 
 def calculator():
-    num1 = float(input('Введите первое число: '))
-    time.sleep(1)
-    operator = input('Введите оператор, который хотите использовать (+, -, /, *): ')
+    while True:
+        num1 = float(input('Введите первое число: '))
+        if num1 != type(float) and num1 != type(int):
+            continue
+        time.sleep(1)
+        operator = input('Введите оператор, который хотите использовать (+, -, /, *): ')
+        if operator not in ['+', '-', '/', '*']:
+            operator = input('Введите предложенный оператор: ')
+        else:
+            break
     time.sleep(1)
     num2 = float(input('Введите второе число: '))
     time.sleep(1)
@@ -25,4 +32,3 @@ def calculator():
     
 calculator()
     
-#     посмотрим, как изменения отобразятся
